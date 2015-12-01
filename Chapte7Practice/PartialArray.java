@@ -45,5 +45,21 @@ public class PartialArray
             this.values[ pos2 ] = temp;
         }
     }
+    
+    private void grow()
+    {
+        int[] values = new int[this.currentSize*2];
+        for(int i = 0; i<this.currentSize; i++)
+        {
+            values[i] = [this.values];
+        }
+        this.values = newValues;
+    }
+    public static void main(String[] args)
+    {
+        
+    }
 }
+
+
 
