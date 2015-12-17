@@ -44,8 +44,6 @@ public class Radar
         Scanner s = new Scanner(System.in);
         System.out.print("1-Randomly Generated Monster/2-User Picked Position(1 or 2): ");
         int choice = s.nextInt();
-        Scanner x = new Scanner(System.in);
-        Scanner y = new Scanner(System.in);
         if(choice==1)
         {
             monsterLocationRow = (int)(Math.random() * rows);
@@ -54,10 +52,10 @@ public class Radar
         else if(choice==2)
         {
             System.out.print("Input X: ");
-            int xAxis = x.nextInt();
+            int xAxis = s.nextInt();
             monsterLocationRow = xAxis;
             System.out.print("Input Y: ");
-            int yAxis = y.nextInt();
+            int yAxis = s.nextInt();
             monsterLocationCol = yAxis;
         }
         noiseFraction = 0.05;

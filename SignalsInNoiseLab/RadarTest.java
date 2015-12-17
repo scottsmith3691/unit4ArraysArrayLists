@@ -1,5 +1,3 @@
-
-
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -64,7 +62,7 @@ public class RadarTest
         {
             for( int y = 0; y < 100; y++)
             {
-                int dectected = radar.accumulator[x][y];
+                int detected = radar.getAccumulatedDetection(x,y);
                 if (detected > highestAccumulatedDetection)
                 {
                     hRow = x;
